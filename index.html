@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign-Up Form</title>
+</head>
+<body>
+    <div class="left-container">
+        
+        <div class="overlay">
+            
+            <div class="odin-text">
+                <span>b</span>
+                <span>o</span>
+                <span>n</span>
+                <span>k</span>
+                <span>e</span>
+                <span>r</span>
+                <span>s</span>
+            </div>
+           <p class="text-0">A DIGITAL PLAYGROUND</p>
+        </div>
+    </div>
+</div>
+    <div class="right-container">
+        
+        <div class="box-1">
+            <p class="box-1-text">This is not a real online service. You know you need something
+            like this in your life to help you realize your deepest dreams. 
+            <br>
+            Sign up now to get started.
+            <br>
+            <br>
+            You <em>know</em> you want to!
+            </p>
+        </div>
+        
+        
+        <div class="box-2">
+            <p class="box-2-text">Let's do this!</p>
+            <form action="#" method="get">
+               <div class="form-group">
+                <ul>
+                <li>
+                <label for="first_name">*First Name</label>
+                <input type="text" 
+                id="first_name" 
+                name="first_name" 
+                placeholder="Bouncy" 
+                required/>
+                </li>
+
+                <li>
+                <label for="email">*email</label>
+                <input type="email" 
+                id="email" 
+                name="email" 
+                required>
+                </li> 
+
+                <li>
+                <label for="password">*Password</label>
+                <input type="password" 
+                id="password" 
+                name="password" 
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="Must contain at least one number and one uppercase 
+                and lowercase letter, 
+                and at least 8 or more characters"
+                required>
+                </li>
+                </ul>
+
+                <ul>
+                <li>
+                <label for="last_name">*Last Name</label>
+                <input type="text" 
+                id="last_name" 
+                name="last_name" 
+                placeholder="Mcbonk" 
+                required>
+                </li>
+
+                <li>
+                <label for="phone_number">Phone Number</label>
+                <input type="tel" 
+                id="phone_number" 
+                name="phone_number" 
+                placeholder="123-456-7890" 
+                pattern="[1-9]{3}-[0-9]{3}-[0-9]{4}"
+                title="###-###-####"
+                >
+                </li>
+              
+                <li>
+                <label for="password">*Confirm Password</label>
+                <input type="password" 
+                id="confirm_password" 
+                name="confirm_password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="Must contain at least one number and one uppercase 
+                and lowercase letter, 
+                and at least 8 or more characters"
+                required>
+                </li>
+            </ul>
+        </div>
+
+            <div class="box-3">
+                <button type="submit">Create Account</button>
+                <p class="box-3-text">Already have an account? <a href=index.html>Log in</a></p>
+    
+            </div>
+                </form>
+
+
+        </div>
+
+     
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
